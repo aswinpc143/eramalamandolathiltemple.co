@@ -1,0 +1,143 @@
+<html>
+<header>
+
+        <h2 class="logo">Fly Away</h2>
+
+    </header>
+
+    <nav>
+
+        <ul>
+
+                <li class="item"><a href="#home">Home</a></li>
+
+                <li class="item"><a href="#hawaii">Hawaii</a></li>
+
+                <li class="item"><a href="#iceland">Iceland</a></li>
+
+                <li class="item"><a href="#greece">Greece</a></li>
+
+        </ul>
+
+    </nav>
+
+{
+
+    box-sizing:border-box;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+body{
+
+    font-family:Verdana;
+
+    margin:0;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+li{
+
+    display:inline-flex;
+
+    flex-direction: row;
+
+    flex-flow: row;
+
+    padding:20px 0 20px;
+
+    vertical-align:right;
+
+}
+
+a:hover, a:focus, a:active {
+
+    color:#e37889;
+
+    text-decoration: none;
+
+}
+
+a{
+
+    font-family:Verdana;
+
+    text-decoration:none;
+
+    transition: color 0.1s, background-color 0.1s;
+
+}
+
+a{
+
+    position:top right;
+
+    display:inline-flex;
+
+    padding:16px;
+
+    margin:0 12px;
+
+    letter-spacing:1px;
+
+    font-size:12px;
+
+    line-height: 16px;
+
+    font-weight:900;
+
+    text-transform:capitalize;
+
+    transition:color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+
+    color:#000;
+
+}
+
+a::before{
+
+    content:'';
+
+    display:block;
+
+    position:relative;
+
+    bottom:3px;
+
+    left:0;
+
+    height:3px;
+
+    background-color:#e37889;
+
+    transform-origin:right top;
+
+    transform:scale(0,1);
+
+    transition: color 0.1s, transform 0.2s ease-out;
+
+}
+
+a:active::before{
+
+    background-color:#e37889;
+
+}
+
+a:hover::before, a:focus::before{
+
+    transform-origin: left top;
+
+    transform: scale(1,1);
+
+}
+</html>
